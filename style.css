@@ -67,15 +67,15 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
    
     
 }
 .text-button{
     
-    color:black;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+    color: black;
+ 
 }
 .button:hover{
     background-color: rgb(231, 31, 148);
@@ -235,8 +235,8 @@ body
             max-width: 3rem;
         }
         position: absolute;
-        left:50rem;
-        bottom:0rem;
+        left:55rem;
+        bottom:-1.2rem;
         padding: 0rem 0rem;
     }
     .button{
