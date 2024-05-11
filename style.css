@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;600&display=swap');
+
+
+body{
+    background-color: rgb(173, 45, 241);
+    background-image: url(./image/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    display: grid;
+    
+}
+
+.logo{
+    max-width: 30rem;
+    padding: 2rem 2rem;
+
+}
+.text-photo-side{
+    height: 80vh;
+    padding: 0rem 4rem;
+    align-content: center;
+    display: flex; 
+    width: 95%;
+    gap:3rem;
+
+    
+}
+.latter{
+    flex-direction: column;
+    
+}
+.name{
+    font-size: 3.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:white;    
+    line-height: 4rem;
+
+}
+.text{
+   font-family: "Open Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1.5rem;
+   color:white;
+}
+.button{
+    border: none;
+    width: 10rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    cursor:pointer;
+    transition: 0.5s;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    height: 3rem;
+}
+.button:hover{
+    background-color: rgb(231, 31, 148);
+}
+.icon{
+    border:none;
+    img
+    {
+    max-width: 3rem;
+    }
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+.icon1{
+    background-color: transparent;
+    border: none;
+}
+.icon2{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+.icon3{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+.image1{
+    filter: brightness(1);
+    transition: 0.5s;
+
+}
+.image1:hover{
+    filter: invert(43%) sepia(57%) saturate(3046%) hue-rotate(300deg) brightness(90%) contrast(200%);
+
+
+}
+.image2{
+    filter: brightness(1);
+    transition: 0.5s;
+}
+.image2:hover{
+    filter: invert(43%) sepia(57%) saturate(3046%) hue-rotate(300deg) brightness(90%) contrast(200%);
+
+}
+.image3:hover{
+    filter: invert(43%) sepia(57%) saturate(3046%) hue-rotate(300deg) brightness(90%) contrast(200%);
+
+}
+.image3{
+    filter: brightness(1);
+    transition: 0.5s;
+}
+.mainlogo{
+    filter: brightness(0);
+}
+
+@media (orientation:portrait)
+{
+    body{
+        background-image: url(/image/bg-mobile.svg);
+    }
+    .text-photo-side{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .name{
+        font-size: 5rem;
+        line-height: 7rem;
+    
+    }
+    .text{
+        font-size: 3rem;
+    }
+    .logo{
+        padding: 8rem 4rem;
+        width: 100rem;
+    }
+    .icon{
+            
+            position: relative; /*Change to relative positioning*/
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            left:2.5rem;
+            margin-top: 2rem; 
+        img{
+            max-width: 6rem;
+            margin: 0 0.5rem;
+        }
+        
+    }
+    .button{
+        width: 30rem;
+        height: 6rem;
+        font-size: 2.5rem;
+        
+    }
+
+
+
+}
+    
