@@ -17,17 +17,22 @@ body
 
 }
 .text-photo-side{
-    height: 100vh;
-    padding: 0rem 4rem;
-    align-content: center;
+    height: 80vh;
+    place-content: center;
+    justify-content: center;
+    align-items: start;
+    position: relative;
     display: flex; 
-    width: 95%;
     gap:3rem;
+    width: 90%;
+    margin:auto;
+    
 
     
 }
 .mainphoto{
-    height: 80vh;
+    height: 70vh;
+    width: 50%;
 }
 .latter{
     flex-direction: column;
@@ -58,11 +63,19 @@ body
     cursor:pointer;
     transition: 0.5s;
     font-size: 1rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.text-button{
+    
+    color:black;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-    height: 3rem;
-    
 }
 .button:hover{
     background-color: rgb(231, 31, 148);
@@ -129,7 +142,7 @@ body
         text-align: center;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 80vh;
         
         
     }
@@ -155,8 +168,8 @@ body
             display: flex; 
             justify-content: center; 
             align-items: center; 
-            left:2.5rem;
-            margin-top: -12rem; 
+            left:0rem;
+            margin-top: -1rem; 
         img{
             max-width: 5rem;
             margin: 0 0.5rem;
@@ -169,14 +182,15 @@ body
         width: 30rem;
         height: 6rem;
         font-size: 2.5rem;
+        margin: auto;
         
     }
     .mainphoto{
-        max-width: 55rem;
+        width: 50rem;
         position: relative;
         display: flex;
         justify-content: center;
-        bottom: 5rem;
+        bottom: 1rem;
         height: 30vh;
     }
 
@@ -185,16 +199,24 @@ body
     body
     {
         background-image: url(./image/bg-desktop.svg);
+        height: 100vh;
+        background-attachment: fixed;
+        background-size: cover;
     }
         .text-photo-side{
         flex-direction: row;
     }
     .mainphoto{
-        max-width: 40rem;
+        max-width: 45rem;
         height: 60vh;
     }
     .latter{
-        height: 80hv;
+        position: relative;
+        top:2.5rem;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .name{
         font-size: 2.5rem;
@@ -213,13 +235,19 @@ body
             max-width: 3rem;
         }
         position: absolute;
-        left: 55rem;
-        top: 40rem;
+        left:50rem;
+        bottom:0rem;
+        padding: 0rem 0rem;
     }
     .button{
+        position: relative;
+        top: -8rem;
         max-width: 15rem;
         height: 4.5rem;
         font-size: 2rem;
+    }
+    .text-button{
+        font-size: 1.5rem;
     }
 }
 }
