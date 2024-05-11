@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;600&display=swap');
 
 
-body{
+body
+{
     background-color: rgb(173, 45, 241);
     background-image: url(./image/bg-desktop.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
-    display: grid;
     
 }
 
@@ -17,7 +17,7 @@ body{
 
 }
 .text-photo-side{
-    height: 80vh;
+    height: 100vh;
     padding: 0rem 4rem;
     align-content: center;
     display: flex; 
@@ -25,6 +25,9 @@ body{
     gap:3rem;
 
     
+}
+.mainphoto{
+    height: 80vh;
 }
 .latter{
     flex-direction: column;
@@ -59,6 +62,7 @@ body{
     font-weight: 300;
     font-style: normal;
     height: 3rem;
+    
 }
 .button:hover{
     background-color: rgb(231, 31, 148);
@@ -111,30 +115,38 @@ body{
     filter: brightness(1);
     transition: 0.5s;
 }
-.mainlogo{
-    filter: brightness(0);
-}
 
-@media (orientation:portrait)
+
+
+
+@media only screen and (max-width: 1000px)
 {
     body{
-        background-image: url(/image/bg-mobile.svg);
+        background-image: url(./image/bg-mobile.svg);
     }
     .text-photo-side{
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        
         
     }
     .name{
-        font-size: 5rem;
+        font-size: 4.5rem;
         line-height: 7rem;
+        position: relative;
+        bottom:7rem;
     
     }
     .text{
         font-size: 3rem;
+        position: relative;
+        bottom: 8rem;
     }
     .logo{
-        padding: 8rem 4rem;
+        padding: 3rem 4rem;
         width: 100rem;
     }
     .icon{
@@ -144,21 +156,76 @@ body{
             justify-content: center; 
             align-items: center; 
             left:2.5rem;
-            margin-top: 2rem; 
+            margin-top: -12rem; 
         img{
-            max-width: 6rem;
+            max-width: 5rem;
             margin: 0 0.5rem;
         }
         
     }
     .button{
+        position: relative;
+        bottom:7rem;
         width: 30rem;
         height: 6rem;
         font-size: 2.5rem;
         
     }
+    .mainphoto{
+        max-width: 55rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        bottom: 5rem;
+        height: 30vh;
+    }
 
+@media(Orientation:landscape)
+{
+    body
+    {
+        background-image: url(./image/bg-desktop.svg);
+    }
+        .text-photo-side{
+        flex-direction: row;
+    }
+    .mainphoto{
+        max-width: 40rem;
+        height: 60vh;
+    }
+    .latter{
+        height: 80hv;
+    }
+    .name{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .text{
+        font-size: 1.2rem;
+    }
+    .logo{
+        max-width: 15rem;
+        padding:1rem 1rem;
+    }
+    .icon{
 
-
+        img{
+            max-width: 3rem;
+        }
+        position: absolute;
+        left: 55rem;
+        top: 40rem;
+    }
+    .button{
+        max-width: 15rem;
+        height: 4.5rem;
+        font-size: 2rem;
+    }
 }
+}
+
+
+
+
+
     
